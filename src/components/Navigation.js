@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {Link} from 'react-router-dom';
-
+import MenuButton from './MenuButton';
+import './cssfiles/Navbar.css';
 
 export default function NAvbar(){
   const [click , setClick] = useState(false);
@@ -13,6 +14,9 @@ export default function NAvbar(){
   }
   return(
      <>
+       <div className="menu-icon">
+          <MenuButton open={click} onClick={handleClick} color='white'/>
+       </div>
        <nav className='navbar'>
         <div className='navbar-container'>
           <ul className= {click ?'nav-menu-active': 'nav-menu'}>
