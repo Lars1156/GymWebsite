@@ -29,3 +29,85 @@
     padding:15px 10px ;
     border-radius: 5px ;
 }
+.menu-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+      height: 90vh;
+      position: absolute;
+      top: 80px;
+      left: -150%;
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+    .navbar--logo {
+      margin-left: -50px;
+    }
+    .navbar {
+      justify-content: start;
+    }
+    
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.3rem;
+      margin-left: 7px;
+      margin-right: 7px;
+      /*margin-left:-15px;*/
+      width: 100%;
+    }
+  
+    .nav-links:hover {
+      width: 100%;
+      background-color: var(--white);
+      color: var(--green);
+      border-radius: 0;
+    }
+  
+    .navbar-logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: translate(25%, 50%);
+    }
+  
+    .menu-icon {
+      display: block;
+      position: absolute;
+      margin-top: -10px;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+  
+    .nav-item {
+      display: flex;
+      flex-direction: columns;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .navbar--logo svg {
+      font-size: 5px;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .navbar--logo h2 {
+      font-size: 2rem;
+    }
+  }
+  
