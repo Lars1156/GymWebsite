@@ -2,12 +2,12 @@ import React, {useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gasp.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Features(){
     let text  = useRef(null);
     useEffect(()=>{
-        gasp.to(text,{
+        gsap.to(text,{
             dealy:0.4,
             duration:1, 
             x: '0',
