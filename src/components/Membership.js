@@ -1,6 +1,8 @@
 import React,{useRef, useEffect} from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Button } from "./Button";
+// import './cssfiles/Member.css';
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Membership(){
