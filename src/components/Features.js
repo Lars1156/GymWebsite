@@ -1,6 +1,6 @@
 import React, {useRef, useEffect} from "react";
-import {gasp } from "gasp";
-import{ ScrollTrigger} from "gasp/ScrollTrrigger";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gasp.registerPlugin(ScrollTrigger);
 
